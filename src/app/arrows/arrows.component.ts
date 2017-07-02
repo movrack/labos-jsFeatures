@@ -83,5 +83,4 @@ export class ArrowsComponent implements OnInit {
 
     setTimeout(() => console.log('arrow ' + this.property), 5000);
   }
-
 }

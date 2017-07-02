@@ -6,11 +6,17 @@ import { ArrowsComponent } from './arrows/arrows.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { IteratorsComponent } from './iterators/iterators.component';
+import { GeneratorsComponent } from './generators/generators.component';
+import { SpreadComponent } from './spread/spread.component';
+import { RestComponent } from './rest/rest.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'arrow', component: ArrowsComponent },
-  { path: 'iterator', component: IteratorsComponent },
+  { path: 'arrows', component: ArrowsComponent },
+  { path: 'iterators', component: IteratorsComponent },
+  { path: 'generators', component: GeneratorsComponent },
+  { path: 'spread', component: SpreadComponent },
+  { path: 'rest', component: RestComponent },
 
   { path: '',
     redirectTo: '/home',
@@ -23,7 +29,10 @@ const appRoutes: Routes = [
     AppComponent,
     ArrowsComponent,
     HomeComponent,
-    IteratorsComponent
+    IteratorsComponent,
+    GeneratorsComponent,
+    SpreadComponent,
+    RestComponent
   ],
   imports: [
     BrowserModule,

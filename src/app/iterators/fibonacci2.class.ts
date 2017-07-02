@@ -1,4 +1,4 @@
-export class Fibonacci implements Iterable<number> {
+export class Fibonacci2 implements Iterable<number> {
 
   private previous = 0;
   private current = 1;
