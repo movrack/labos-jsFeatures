@@ -18,6 +18,6 @@ export class RestComponent implements OnInit {
     }
 
     f( 'arg1', 'arg2', 3, 4, 'arg5', { data: 'obj5'} );
-  }
 
+  }
 }

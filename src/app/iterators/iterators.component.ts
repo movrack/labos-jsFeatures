@@ -29,9 +29,7 @@ export class IteratorsComponent implements OnInit {
       }
     }
   }
-
   ngOnInit() {
 
   }
-
 }

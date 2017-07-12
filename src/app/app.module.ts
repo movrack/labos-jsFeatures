@@ -9,14 +9,22 @@ import { IteratorsComponent } from './iterators/iterators.component';
 import { GeneratorsComponent } from './generators/generators.component';
 import { SpreadComponent } from './spread/spread.component';
 import { RestComponent } from './rest/rest.component';
+import { DestructuringComponent } from './destructuring/destructuring.component';
+import { PromiseComponent } from './promise/promise.component';
+import { ObservablesComponent } from './observables/observables.component';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'arrows', component: ArrowsComponent },
-  { path: 'iterators', component: IteratorsComponent },
-  { path: 'generators', component: GeneratorsComponent },
   { path: 'spread', component: SpreadComponent },
   { path: 'rest', component: RestComponent },
+  { path: 'destructuring', component: DestructuringComponent },
+  { path: 'iterators', component: IteratorsComponent },
+  { path: 'generators', component: GeneratorsComponent },
+  { path: 'promises', component: PromiseComponent },
+  { path: 'observables', component: ObservablesComponent },
+  { path: 'asyncAwait', component: AsyncAwaitComponent },
 
   { path: '',
     redirectTo: '/home',
@@ -32,7 +40,11 @@ const appRoutes: Routes = [
     IteratorsComponent,
     GeneratorsComponent,
     SpreadComponent,
-    RestComponent
+    RestComponent,
+    DestructuringComponent,
+    PromiseComponent,
+    ObservablesComponent,
+    AsyncAwaitComponent
   ],
   imports: [
     BrowserModule,
